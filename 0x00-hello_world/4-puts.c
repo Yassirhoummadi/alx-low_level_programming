@@ -5,7 +5,7 @@
 *
 * Descripcion : A c program that prints with put funcion
 *
-* Return : 0
+* Return: Always 0 (Success)
 */
 
 int main(void)
