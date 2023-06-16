@@ -3,7 +3,7 @@
 /**
 * main - Entry points
 *
-* Description: using sizeof to print the size of various types.
+* Description: using sizeof to print the size of various typees.
 *
 * Return: Always 0 (Success)
 */
