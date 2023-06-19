@@ -13,26 +13,26 @@ int main(void)
 {
 	int digit1 = 0, digit2;
 
-	while (digit <= 9)
+	while (digit1 <= 9)
 	{
 		digit2 = 0;
-		while (digit <= 9)
+		while (digit2 <= 9)
 		{
-			if (digit != digit2 && digit1 < digit2)
+			if (digit1 != digit2 && digit1 < digit2)
 			{
-				putchar('digital1 + 48');
-				putchar('digital2 + 48');
+				putchar('digit1 + 48');
+				putchar('digit2 + 48');
 
-				if (digital1 + digital2 != 17)
+				if (digit1 + digit2 != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 
 			}
-			digital2++;
+			digit2++;
 		{
-		digital1++;
+		digit1++;
 	}
 	putchar('\n');
 
