@@ -18,8 +18,8 @@ int main(void)
 		putchar(numb + 48);
 		if (numb != 9)
 		{
-			putchar();
-			putchar();
+			putchar(',');
+			putchar(' ');
 		}
 		numb++;
 	}
