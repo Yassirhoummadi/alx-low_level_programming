@@ -1,40 +1,52 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * print_last_digit - function that prints the last digit of a number.
- * @i: int value
- *
- * Return: the value of the last digit
- *
- */
+* print_times_table - prints time table of n
+* @n: takes numb
+*
+*
+*/
+
 void print_times_table(int n)
 {
-	if (n >= 15 && n>=0)
-	{
-		int i = 0;
-
-		for (; i <= n; i++)
-		{
-			int j =0;
-
-			_putchar(48);
-			for (; j <=n; j++)
-			{
-				int result =i * j;
-
-				_putchar(',');
-				_putchar(' ');
-				if (result <=9 || result <= 99)
-					_putchar(' ');
-				if (result >= 100)
-				{
-					_putchar((result /100) + '0');
-					_putchar((result /10) + '0');
-				} else if (result <= 99 && result >= 10)
-					_putchar((result /10) +'0');
-				_putchar((result %10) +48);
-
-			}
-			_putchar('\n');
-		}
-	}
+int i, j, k;
+if (n >= 0 && n <= 15)
+{
+for (i = 0; i <= n; i++)
+{
+for (j = 0; j <= n; j++)
+{
+k = j * i;
+if (j == 0)
+{
+_putchar(k + '0');
+}
+else if (k < 10 && j != 0)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
+_putchar(k + '0');
+}
+else if (k >= 10 && k < 100)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
+}
+else if (k >= 100)
+{
+_putchar(',');
+_putchar(' ');
+_putchar((k / 100) + '0');
+_putchar(((k / 10) % 10) + '0');
+_putchar((k % 10) + '0');
+}
+}
+_putchar('\n');
+}
+}
 }
