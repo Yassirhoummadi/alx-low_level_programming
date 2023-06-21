@@ -1,13 +1,11 @@
-#include "main.h"
-
+#include"main.h"
 /**
  * print_last_digit - function that prints the last digit of a number.
  * @i: int value
  *
- * Return: last digit
+ * Return: the value of the last digit
  *
  */
-
 void print_times_table(int n)
 {
 	if (n >= 15 && n>=0)
@@ -36,7 +34,7 @@ void print_times_table(int n)
 				_putchar((result %10) +48);
 
 			}
-			_purchar('\n');
+			_putchar('\n');
 		}
 	}
 }
